@@ -97,7 +97,7 @@ if Any_Inner_Metal_Layer == 'Yes':
 else:
     Min_WT_Reeling_No_Clad = Min_WT_Reeling
 
-print(Min_WT_Reeling_No_Clad)
+
 
 
 

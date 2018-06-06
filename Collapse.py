@@ -239,7 +239,7 @@ x0 = Steel_Pipe_Diameter/20
 #x0 = Steel_Pipe_Diameter/20.0 # assume the guess value is pipe OD/20
 
 
-Min_WT_Collaps_WO_Tol = round(float(fsolve(f_collaps,x0)),3)
+Min_WT_Collaps_WO_Tol = float(fsolve(f_collaps,x0))
 
 if Fabrication_Method == 'SMLS':
     Min_WT_Collaps = (Min_WT_Collaps_WO_Tol + Pipe_Corrosion_Allowance)/(1.0-Tol)
@@ -248,9 +248,6 @@ if Fabrication_Method == 'HFW':
 if Fabrication_Method == 'MWP':
     Min_WT_Collaps = Min_WT_Collaps_WO_Tol + Tol + Pipe_Corrosion_Allowance
 
-
-
-print('Min_WT_Collaps =', Min_WT_Collaps)
 
 
 

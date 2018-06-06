@@ -226,6 +226,6 @@ Min_WT_Propgation_Buckling_WO_Cor = (ppr/(35*Char_Yield_Stress*Fabrication_Facto
 
 Min_WT_Propgation_Buckling = round((Min_WT_Propgation_Buckling_WO_Cor + Pipe_Corrosion_Allowance),3)
 
-print('Min_WT_Propgation_Buckling = ', Min_WT_Propgation_Buckling)
+
 
 

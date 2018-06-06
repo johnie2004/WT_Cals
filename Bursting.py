@@ -211,16 +211,5 @@ if Fabrication_Method == 'MWP':
 
 Min_WT_Presssure_Containment = max(Min_WT_Pressure_Containment_Ope,Min_WT_Pressure_Containment_Sys_Test)
 
-print('Min_WT_for_Busting = ', round(Min_WT_Presssure_Containment,3))
 
-sheet['K1'].value = 'Min. Required WT for Pressure Containment'
-
-sheet['K2'].value = str(round(Min_WT_Presssure_Containment,2)) + 'mm'
-
-my_red = openpyxl.styles.colors.Color(rgb='00FF0000')
-my_fill = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_red)
-
-sheet['K2'].fill = my_fill
-
-wb.save('WT_Cals_Results.xlsx')
 
